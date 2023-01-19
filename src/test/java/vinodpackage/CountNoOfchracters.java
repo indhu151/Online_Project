@@ -14,9 +14,7 @@ public class CountNoOfchracters {
 		
 			
 			
-			System.out.println(ch[i]+" "+count);	
-		     
-			
+					
 		}
 		
 		
