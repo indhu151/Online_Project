@@ -16,7 +16,7 @@ public class ArrayBiggest {
 	           System.out.println("enter the array elements");
 	          int ar[]=new int[n];
 			 
-	          
+	            
 	          for(int i=0;i<ar.length;i++)
 	          {
 	        	  ar[i]=sc.nextInt();
@@ -24,33 +24,35 @@ public class ArrayBiggest {
 	      
 	          
 	          
-	          for(int i=0;i<ar.length;i++)
-	          {
-	        	 System.out.println(ar[i]);
-	          }
-	     
+	          
+	          
 	
-	         int  b= getBig(ar);
-	     System.out.println(b);
+	         getBig(ar);
 	
 	}
 
-	private  static int  getBig(int[] ar) {
+	private  static void  getBig(int[] ar) {
 
-		   int big=ar[0];
+		   int big=ar[0]; int sbig=ar[1];
 		   
 		   for(int i=0;i<ar.length;i++)
 		   {
 			   
-			   if(ar[0]>ar[i])
+			   if(big<ar[i])
 			   {
+				   sbig=big;
 				   big=ar[i];
+			   }
+			   else 
+			   {
+				   sbig=ar[i];
 			   }
 			   
 		   }
-		   
+		     System.out.println(big);
+		     System.out.println(sbig);
+		     
 		
-		return big;
 	}
 
 }

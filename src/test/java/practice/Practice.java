@@ -17,4 +17,5 @@ public class Practice {
 				System.out.println(res);
 	}
 
+	}
 }
