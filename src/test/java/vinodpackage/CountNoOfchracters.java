@@ -9,16 +9,18 @@ public class CountNoOfchracters {
 		    
 		  
 		char[] ch = s.toCharArray();
-		 int count =1;
+		 
 		
+		int count[]=new int[s.length()];
+		int k;
 		for(int i=0;i<ch.length;i++)
 		{
-			 int j=0;
-			for(j=i+1;j<ch.length;j++)
+			 count[k]=1;
+			for(int j=i+1;j<ch.length;j++)
 			{
 				if(ch[i]==ch[j])
 				{
-					count++;
+				  count[k]++;
 				}
 				
 			}
